@@ -1,0 +1,38 @@
+<div class="container mt-2">
+  <legend>Create Item</legend>
+  <form>
+    <div class="mb-3">
+      <label for="txtTitle" class="form-label">Title</label>
+      <input
+        type="text"
+        name="title"
+        [(ngModel)]="book.title"
+        class="form-control"
+        id="txtTitle"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="txtAuthor" class="form-label">Author</label>
+      <input
+        type="text"
+        name="txtAuthor"
+        [(ngModel)]="book.author"
+        class="form-control"
+        id="txtAuthor"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="txtGenre" class="form-label">Genre</label>
+      <input
+        type="text"
+        name="txtGenre"
+        [(ngModel)]="book.genre"
+        class="form-control"
+        id="txtGenre"
+      />
+    </div>
+    <button type="button" (click)="create()" class="btn btn-primary">
+      Create
+    </button>
+  </form>
+</div>
