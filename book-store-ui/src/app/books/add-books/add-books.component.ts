@@ -10,7 +10,6 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   selector: 'app-add-books',
   templateUrl: './add-books.component.html',
-  styleUrls: ['./add-books.component.css'],
   imports: [FormsModule, NgIf, RouterModule]
 })
 export class AddBooksComponent implements OnInit {

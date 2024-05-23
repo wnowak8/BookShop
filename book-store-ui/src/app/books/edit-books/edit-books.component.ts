@@ -10,7 +10,6 @@ import { NgIf } from '@angular/common';
   standalone: true,
   imports: [FormsModule, NgIf, RouterModule],
   templateUrl: './edit-books.component.html',
-  styleUrl: './edit-books.component.css',
 })
 export class EditBooksComponent implements OnInit {
   constructor(

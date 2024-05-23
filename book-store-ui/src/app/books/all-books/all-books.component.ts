@@ -10,13 +10,12 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   selector: 'app-all-books',
   templateUrl: './all-books.component.html',
-  styleUrls: ['./all-books.component.css'],
   imports: [NgFor, RouterModule]
 })
 export class AllBooksComponent implements OnInit {
   books: Books[] = [];
   itemIdToDelete: string = '';
-  deleteModal: any; // Consider typing deleteModal more precisely
+  deleteModal: any; 
 
   constructor(
     private booksService: BooksService,
@@ -26,24 +25,20 @@ export class AllBooksComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // Ensure deleteModal is initialized properly before using it
     if (isPlatformBrowser(this.platformId)) {
       this.initializeDeleteModal();
     }
 
     this.getAllBooks();
 
-    // Add event listener for hidden.bs.modal event
     if (isPlatformBrowser(this.platformId)) {
       this.renderer.listen(this.elementRef.nativeElement, 'hidden.bs.modal', () => {
-        // Clear data associated with bs.modal to prevent memory leaks
         this.elementRef.nativeElement['bs.modal'] = null;
       });
     }
   }
 
   initializeDeleteModal(): void {
-    // Check if bootstrap object exists in window before using it
     if (isPlatformBrowser(this.platformId) && window.bootstrap && window.bootstrap.Modal) {
       this.deleteModal = new window.bootstrap.Modal(
         document.getElementById('deleteModal')
@@ -68,7 +63,6 @@ export class AllBooksComponent implements OnInit {
 
   openDeleteModal(id: string): void {
     this.itemIdToDelete = id;
-    // Check if deleteModal is initialized before using it
     if (this.deleteModal) {
       this.deleteModal.show();
     } else {
@@ -81,7 +75,6 @@ export class AllBooksComponent implements OnInit {
       this.books = this.books.filter(
         (_) => _._id !== this.itemIdToDelete
       );
-      // Check if deleteModal is initialized before using it
       if (this.deleteModal) {
         this.deleteModal.hide();
       } else {

@@ -6,7 +6,6 @@ import { AllBooksComponent } from './books/all-books/all-books.component';
   selector: 'app-root',
   templateUrl: './app.component.html',
   imports: [CommonModule, RouterOutlet, AllBooksComponent],
-  styleUrl: './app.component.css',
   standalone: true,
 })
 export class AppComponent {
