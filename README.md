@@ -1,14 +1,13 @@
 # Księgarnia Webowa - README
 
 ## Spis treści
- 2. [Opis projektu](https://github.com/wnowak8/BookShop#opis-projektu)<br>
- 3. [Zmienne środowiskowe](https://github.com/wnowak8/BookShop#opis-projektu)<br>
- 4. [Technologie](https://github.com/wnowak8/BookShop#technologie)<br>
- 5. [Instalacja](https://github.com/wnowak8/BookShop#instalacja)<br>
- 6. [Uruchomienie](https://github.com/wnowak8/BookShop#uruchomienie)<br>
- 7. [API](https://github.com/wnowak8/BookShop#API)<br>
- 8. [Struktura projektu](https://github.com/wnowak8/BookShop#struktura-projektu)<br>
- 9. [Przyszłe rozszerzenia](https://github.com/wnowak8/BookShop#przyszłe-rozszerzenia)<br>
+ 1. [Opis projektu](https://github.com/wnowak8/BookShop#opis-projektu)<br>
+ 2. [Technologie](https://github.com/wnowak8/BookShop#technologie)<br>
+ 3. [Instalacja](https://github.com/wnowak8/BookShop#instalacja)<br>
+ 4. [Uruchomienie](https://github.com/wnowak8/BookShop#uruchomienie)<br>
+ 5. [API](https://github.com/wnowak8/BookShop#API)<br>
+ 6. [Struktura projektu](https://github.com/wnowak8/BookShop#struktura-projektu)<br>
+ 7. [Przyszłe rozszerzenia](https://github.com/wnowak8/BookShop#przyszłe-rozszerzenia)<br>
 
 ## Opis projektu
 Księgarnia Webowa to aplikacja internetowa umożliwiająca zarządzanie bazą książek poprzez operacje CRUD (Create, Read, Update, Delete). Aplikacja składa się z backendu stworzonego w Nest.js oraz frontendu zbudowanego przy użyciu Angulara. Dane są przechowywane w bazie MongoDB hostowanej na MongoDB Atlas.
@@ -17,7 +16,7 @@ Księgarnia Webowa to aplikacja internetowa umożliwiająca zarządzanie bazą k
 - Backend: Nest.js
 - Frontend: Angular
 - Baza danych: MongoDB Atlas
-- Inne: Node.js, TypeScript, Mongoose (dla Nest.js)
+- Inne: Node.js, TypeScript, Mongoose (dla Nest.js), Bootstrap
 
 ## Instalacja
 Wymagania wstępne
@@ -25,7 +24,7 @@ Wymagania wstępne
 - npm (menedżer pakietów Node.js)
 - Konto MongoDB Atlas
 
-## Kroki instalacyjne
+### Kroki instalacyjne
 1. Klonowanie repozytorium
 
 ```bash
@@ -46,7 +45,8 @@ npm install
 cd ../book-store-ui
 npm install
 ```
-Uruchomienie
+## Uruchomienie
+
 Backend
 W katalogu book-store uruchom:
 
