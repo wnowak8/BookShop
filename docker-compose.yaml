@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  book-store:
+    build:
+      context: ./book-store
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+
+  book-store-ui:
+    build:
+      context: ./book-store-ui
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
